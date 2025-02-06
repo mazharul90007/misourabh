@@ -1,10 +1,9 @@
+import Title from "../../../Shared/Title/Title";
 
 const AboutMe = () => {
     return (
         <div className="my-10 bg-secondary p-8">
-            <div>
-                <h2 className=" text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3"><span className="text-primary">A</span>bout Me</h2>
-            </div>
+            <Title firstLetter={"A"} title={"bout Me"}></Title>
             <div className="">
                 
                 <div className="my-4">

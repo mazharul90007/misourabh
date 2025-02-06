@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Title from "../../../Shared/Title/Title";
 
 const educationData = [
   {
@@ -28,10 +29,8 @@ const educationData = [
 const Education = () => {
   return (
     <div className="bg-secondary py-8">
-      <div className="mx-8">
-        <h2 className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3">
-          <span className="text-primary">E</span>ducation
-        </h2>
+      <div className="px-8">
+        <Title firstLetter={'E'} title={'ducation'}></Title>
       </div>
       <div>
         <VerticalTimeline lineColor="#F6A98F" layout="1-column-left" animate>

@@ -1,6 +1,7 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaCheck } from "react-icons/fa";
 import { SiTailwindcss, SiBootstrap, SiFirebase, SiExpress, SiMongodb, SiDaisyui } from "react-icons/si";
 import ProgressBar from "@ramonak/react-progress-bar";
+import Title from "../../../Shared/Title/Title";
 
 const Skill = () => {
     const skills = [
@@ -29,9 +30,7 @@ const Skill = () => {
         <div className="my-8 p-8 bg-secondary">
             <section className="grid md:grid-cols-2 gap-4">
                 <div className="md:col-span-1">
-                    <h2 className="text-2xl font-robotoSlab mb-3 font-semibold border-b-2 py-3">
-                        <span className="text-primary">T</span>ech Skills
-                    </h2>
+                   <Title firstLetter={'T'} title={'ech Skills'}></Title>
                     <div className="grid md:grid-cols-2  gap-2 mb-16">
                         {skills.map((skill, index) => (
                             <div key={index} className="text-center p-4 shadow rounded-md bg-[#fcd2c3] w-full">
@@ -56,9 +55,7 @@ const Skill = () => {
 
                 {/* Soft Skills */}
                 <div className="md:col-span-1 pl-5 md:border-l">
-                    <h2 className="text-2xl font-robotoSlab mb-3 font-semibold border-b-2 py-3">
-                        <span className="text-primary">S</span>oft Skills
-                    </h2>
+                <Title firstLetter={'S'} title={'oft Skills'}></Title>
                     <div className="space-y-3">
                         {
                             softSkills.map((softSkill,index) =>

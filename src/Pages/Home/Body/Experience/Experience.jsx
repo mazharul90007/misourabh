@@ -1,12 +1,11 @@
 import { FaBuilding, FaUserAlt } from "react-icons/fa";
+import Title from "../../../Shared/Title/Title";
 
 const Experience = () => {
     return (
         <div className="mb-8 bg-secondary p-8">
             <div className="">
-                <h2 className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3">
-                    <span className="text-primary">E</span>xperience
-                </h2>
+                <Title firstLetter={'E'} title={'xperience'}></Title>
             </div>
             <section className="">
                 <div className=" p-6 border  rounded-lg shadow-md">

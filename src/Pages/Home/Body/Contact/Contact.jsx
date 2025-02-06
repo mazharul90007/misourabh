@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import emailAnimation from '../../../../../public/email.json'
 import Lottie from "lottie-react";
+import Title from "../../../Shared/Title/Title";
 // import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -42,11 +43,9 @@ const Contact = () => {
     };
 
     return (
-        <div className="mb-16 bg-secondary p-8">
+        <div className="bg-secondary p-8">
             <div className="">
-                <h2 className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3">
-                    <span className="text-primary">C</span>ontact Me
-                </h2>
+                <Title firstLetter={'C'} title={'ontact Me'}></Title>
             </div>
             <div className="">
                 <div className="flex flex-col md:flex-row  border  rounded-lg shadow-lg">

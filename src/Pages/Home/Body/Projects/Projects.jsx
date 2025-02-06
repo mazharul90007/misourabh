@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Title from '../../../Shared/Title/Title';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -13,13 +14,11 @@ const Projects = () => {
     return (
         <div className='mb-8 bg-secondary p-8'>
             <div className="">
-                <h2 className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3">
-                    <span className="text-primary">P</span>rojects
-                </h2>
+                <Title firstLetter={'P'} title={'rojects'}></Title>
             </div>
             <div className="grid grid-cols-1 gap-4">
                 {projects.map((project, index) => (
-                    <div key={index} className='grid md:grid-cols-12 gap-4 p-2 border rounded shadow-md'>
+                    <div key={index} className='grid md:grid-cols-12 gap-4 p-3 border rounded shadow-md'>
                         {/* image */}
                         <div className='md:col-span-7'>
                             <img src={project.image} alt="project img" className='h-80 rounded w-full' />
@@ -30,12 +29,12 @@ const Projects = () => {
                             <p className='text-gray-500 font-semibold mb-3'>{project.type}</p>
 
                             <p className='text-gray-400 flex-grow'>{project.description}</p>
-                            <div className='mt-auto flex gap-2'>
-                                <button className='py-1 px-3 border bg-white shadow rounded-md hover:text-primary font-medium text-gray-500 hover:scale-95 transition-transform transform'>Live</button>
+                            <div className='mt-auto flex gap-2 text-sm'>
+                                <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Live</button>
 
-                                <button className='py-1 px-3 border bg-white shadow rounded-md hover:text-primary font-medium text-gray-500 hover:scale-95 transition-transform transform'>Client Code</button>
+                                <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Client Code</button>
 
-                                <button className='py-1 px-3 border bg-white shadow rounded-md hover:text-primary font-medium text-gray-500 hover:scale-95 transition-transform transform'>Server Code</button>
+                                <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Server Code</button>
                             </div>
                         </div>
                     </div>

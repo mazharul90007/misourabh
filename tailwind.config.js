@@ -14,7 +14,7 @@ export default {
       },
       colors: {
         paper: '#F9F4DA',   // background paper
-        primary: '#F6A98F', //icon color
+        primary: '#ef8e6e', //icon color
         secondary: '#FAF6F3' //bg color
       },
     },
