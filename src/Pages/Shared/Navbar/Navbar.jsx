@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className="navbar-center">
             </div>
             <div className="navbar-end">
-                <ul className="menu menu-horizontal gap-5 hidden lg:flex text-lg font-semibold font-cinzel mr-2">
+                <ul className="menu menu-horizontal gap-5 hidden lg:flex text-lg font-semibold mr-2">
                     {navList}
                 </ul>
                 <a href="/Resume_of_Sourabh.pdf" target="_blank" rel="noopener noreferrer">

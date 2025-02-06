@@ -17,7 +17,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit text-sm font-cinzel font-semibold">
+        <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit text-sm font-semibold">
             {menuItems.map((item) => (
                 <div
                     key={item.name}

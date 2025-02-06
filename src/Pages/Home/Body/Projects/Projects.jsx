@@ -17,9 +17,9 @@ const Projects = () => {
                     <span className="text-primary">P</span>rojects
                 </h2>
             </div>
-            <div className="grid grid-cols-1 gap-3">
+            <div className="grid grid-cols-1 gap-4">
                 {projects.map((project, index) => (
-                    <div key={index} className='grid md:grid-cols-12 gap-4 p-2 border border-amber-200 rounded shadow-md'>
+                    <div key={index} className='grid md:grid-cols-12 gap-4 p-2 border rounded shadow-md'>
                         {/* image */}
                         <div className='md:col-span-7'>
                             <img src={project.image} alt="project img" className='h-80 rounded w-full' />

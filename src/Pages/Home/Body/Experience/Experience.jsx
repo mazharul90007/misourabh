@@ -14,7 +14,7 @@ const Experience = () => {
                         <FaBuilding className="text-primary text-3xl" />
                         <div>
                             <h3 className="text-xl font-semibold text-gray-800">QuikMart, Newcastle, Australia</h3>
-                            <p className="text-gray-600 text-sm">January 1, 2023 – June 30, 2023</p>
+                            <p className="text-gray-500 text-sm">January 1, 2023 – June 30, 2023</p>
                         </div>
                     </div>
 
@@ -22,7 +22,7 @@ const Experience = () => {
                         <FaUserAlt className="text-primary text-3xl" />
                         <div>
                             <h4 className="text-lg font-semibold text-gray-800">Front of House (FOH)</h4>
-                            <ul className="list-disc pl-6 text-gray-700">
+                            <ul className="list-disc pl-6 text-gray-500">
                                 <li>Provided excellent customer service in a fast-paced supermarket environment.</li>
                                 <li>Managed checkout processes and assisted customers with product inquiries.</li>
                                 <li>Ensured store cleanliness, organized stock, and maintained product availability.</li>
@@ -33,7 +33,7 @@ const Experience = () => {
 
                     <div className="p-4 rounded-md">
                         <h5 className="text-lg font-semibold text-gray-800">Key Responsibilities:</h5>
-                        <ul className="list-disc pl-6 text-gray-700">
+                        <ul className="list-disc pl-6 text-gray-500">
                             <li>Managed inventory and ensured stock levels were maintained.</li>
                             <li>Provided personalized support, helping customers with their shopping needs.</li>
                             <li>Ensured smooth operations at checkout while maintaining high service standards.</li>

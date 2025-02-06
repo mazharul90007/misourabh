@@ -29,7 +29,7 @@ const Skill = () => {
         <div className="my-8 p-8 bg-secondary">
             <section className="grid md:grid-cols-2 gap-4">
                 <div className="md:col-span-1">
-                    <h2 className="text-2xl font-robotoSlab mb-2 font-semibold border-b-2 py-3">
+                    <h2 className="text-2xl font-robotoSlab mb-3 font-semibold border-b-2 py-3">
                         <span className="text-primary">T</span>ech Skills
                     </h2>
                     <div className="grid md:grid-cols-2  gap-2 mb-16">
@@ -56,10 +56,10 @@ const Skill = () => {
 
                 {/* Soft Skills */}
                 <div className="md:col-span-1 pl-5 md:border-l">
-                    <h2 className="text-2xl font-robotoSlab mb-2 font-semibold border-b-2 py-3">
+                    <h2 className="text-2xl font-robotoSlab mb-3 font-semibold border-b-2 py-3">
                         <span className="text-primary">S</span>oft Skills
                     </h2>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                         {
                             softSkills.map((softSkill,index) =>
                                 <div key={index} className="flex items-center gap-2">

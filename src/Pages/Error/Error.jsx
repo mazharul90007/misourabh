@@ -13,7 +13,7 @@ const Error = () => {
             {/* Back to Home Button */}
             <div className="mt-8">
                 <Link to="/" aria-label="Back to Home">
-                    <button className="py-2 my-4 px-4 border border-black border-r-2 border-b-2 rounded-md hover:scale-95 transition-transform duration-300 transform font-bold font-cinzel">
+                    <button className="py-2 my-4 px-4 border border-black border-r-2 border-b-2 rounded-md hover:scale-95 transition-transform duration-300 transform font-bold">
                         Back to Home
                     </button>
                 </Link>

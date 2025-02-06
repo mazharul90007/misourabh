@@ -42,10 +42,14 @@ const Contact = () => {
     };
 
     return (
-        <div className="my-16">
-            <h2 className=" text-center text-4xl font-rye mb-5">Contact Me</h2>
+        <div className="mb-16 bg-secondary p-8">
             <div className="">
-                <div className="flex flex-col md:flex-row  border border-black border-r-4 border-b-4 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3">
+                    <span className="text-primary">C</span>ontact Me
+                </h2>
+            </div>
+            <div className="">
+                <div className="flex flex-col md:flex-row  border  rounded-lg shadow-lg">
 
                     {/* Description Section */}
                     <div className=" md:w-1/2 flex flex-col items-center p-6 shadow-md">
@@ -93,7 +97,7 @@ const Contact = () => {
 
                     {/* Form Section */}
                     <div className="md:w-1/2 p-6 bg-[#F0F0F0]">
-                        <h2 className=" text-center text-3xl font-semibold font-cinzel mb-5">Lets Connect</h2>
+                        <h2 className=" text-center text-3xl font-semibold font-robotoSlab mb-5">Lets Connect</h2>
 
                         <div className="">
                             <form onSubmit={handleSubmit}>
@@ -140,7 +144,7 @@ const Contact = () => {
 
                                 {/* Submit Button */}
                                 <div className="mt-6 text-center">
-                                    <button className="py-2 px-4 border border-black border-r-2 border-b-2 rounded-md hover:scale-95 transition-transform duration-300 font-bold font-cinzel">
+                                    <button className="py-2 px-4 border border-black border-r-2 border-b-2 rounded-md hover:scale-95 transition-transform duration-300 font-bold">
                                         Send Message
                                     </button>
                                 </div>

@@ -1,14 +1,14 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
-    return (
-        <footer className="bg-gray-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+  return (
+    <footer className="bg-gray-800 text-white">
+      <div className="max-w-7xl mx-auto px-10 py-6 flex flex-col md:flex-row justify-between items-center">
         {/* Footer Text */}
         <p className="text-gray-400 text-sm">
           © {new Date().getFullYear()} miSourabh. All rights reserved.
         </p>
-        
+
         {/* Social Links */}
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a
@@ -28,14 +28,6 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/your-handle"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white text-2xl"
-          >
-            <FaTwitter />
-          </a>
-          <a
             href="mailto:mazharul90006@gmail.com"
             className="text-gray-400 hover:text-white text-2xl"
           >
@@ -44,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    )
+  )
 };
 
 export default Footer;
