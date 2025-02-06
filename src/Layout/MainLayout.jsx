@@ -11,7 +11,7 @@ const MainLayout = () => {
                 <Navbar />
             </div> */}
             {/* Sidebar & Content */}
-            <div className="grid md:grid-cols-12 gap-1 w-11/12 mx-auto">
+            <div className="grid md:grid-cols-12 gap-1 w-[98%]  md:w-[96%] mx-auto">
                 {/* Sticky Sidebar */}
                 <div className="md:col-span-2 mx-auto md:h-[calc(100vh-288px)] sticky top-20 md:top-32 overflow-y-auto z-30">
                     <Sidebar />

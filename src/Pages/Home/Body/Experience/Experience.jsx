@@ -2,13 +2,16 @@ import { FaBuilding, FaUserAlt } from "react-icons/fa";
 
 const Experience = () => {
     return (
-        <div className="my-16">
+        <div className="mb-8 bg-secondary p-8">
+            <div className="">
+                <h2 className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 py-3">
+                    <span className="text-primary">E</span>xperience
+                </h2>
+            </div>
             <section className="">
-                <h2 className=" text-center text-4xl font-rye mb-5">My Experience</h2>
-
-                <div className=" p-6 border border-black border-r-4 border-b-4 rounded-lg shadow-lg">
+                <div className=" p-6 border  rounded-lg shadow-md">
                     <div className="flex items-center space-x-4 mb-4">
-                        <FaBuilding className="text-[#FCBA29] text-3xl" />
+                        <FaBuilding className="text-primary text-3xl" />
                         <div>
                             <h3 className="text-xl font-semibold text-gray-800">QuikMart, Newcastle, Australia</h3>
                             <p className="text-gray-600 text-sm">January 1, 2023 – June 30, 2023</p>
@@ -16,7 +19,7 @@ const Experience = () => {
                     </div>
 
                     <div className="flex items-center space-x-4 mb-4">
-                        <FaUserAlt className="text-[#FCBA29] text-3xl" />
+                        <FaUserAlt className="text-primary text-3xl" />
                         <div>
                             <h4 className="text-lg font-semibold text-gray-800">Front of House (FOH)</h4>
                             <ul className="list-disc pl-6 text-gray-700">
