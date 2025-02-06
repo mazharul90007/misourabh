@@ -1,0 +1,57 @@
+[
+    {
+      "name": "HTML5",
+      "icon": "FaHtml5",
+      "progress": 95,
+      "color": "bg-blue-500"
+    },
+    {
+      "name": "CSS3",
+      "icon": "<FaCss3Alt/>",
+      "progress": 90,
+      "color": "bg-orange-500"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "<SiTailwindcss/>",
+      "progress": 85,
+      "color": "bg-teal-500"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "<SiBootstrap/>",
+      "progress": 85,
+      "color": "bg-purple-500"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "<FaReact/>",
+      "progress": 80,
+      "color": "bg-yellow-400"
+    },
+    {
+      "name": "React",
+      "icon": "<FaReact/>",
+      "progress": 70,
+      "color": "bg-blue-400"
+    },
+    {
+      "name": "Node.js",
+      "icon": "<FaNodeJs/>",
+      "progress": 70,
+      "color": "bg-green-500"
+    },
+    {
+      "name": "Express.js",
+      "icon": "<SiExpress/>",
+      "progress": 70,
+      "color": "bg-gray-500"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "<SiMongodb/>",
+      "progress": 70,
+      "color": "bg-green-400"
+    }
+  ]
+  
