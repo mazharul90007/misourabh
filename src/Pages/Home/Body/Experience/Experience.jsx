@@ -3,7 +3,7 @@ import Title from "../../../Shared/Title/Title";
 
 const Experience = () => {
     return (
-        <div className="mb-8 bg-secondary p-8">
+        <div className="mb-8 bg-secondary p-4 md:p-8">
             <div className="">
                 <Title firstLetter={'E'} title={'xperience'}></Title>
             </div>

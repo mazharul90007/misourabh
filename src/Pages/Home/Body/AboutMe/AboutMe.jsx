@@ -2,10 +2,10 @@ import Title from "../../../Shared/Title/Title";
 
 const AboutMe = () => {
     return (
-        <div className="my-10 bg-secondary p-8">
+        <div className="my-10 bg-secondary p-4 md:p-8" id="about">
             <Title firstLetter={"A"} title={"bout Me"}></Title>
             <div className="">
-                
+
                 <div className="my-4">
 
                     <p className="text-gray-500">I am <span className="text-gray-700 font-semibold">Mazharul Islam Sourabh</span>, a passionate Junior Web Developer with a strong focus on <span className="text-gray-700 font-semibold">MERN</span> stack development. My programming journey began in January 2023, and since then, I have been dedicated to honing my skills and staying up-to-date with the latest technologies. <br /><br />

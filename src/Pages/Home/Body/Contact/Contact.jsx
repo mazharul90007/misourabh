@@ -43,7 +43,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="bg-secondary p-8">
+        <div className="bg-secondary p-4 md:p-8" id="contact">
             <div className="">
                 <Title firstLetter={'C'} title={'ontact Me'}></Title>
             </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                                 </div>
                                 <div className="flex items-center text-gray-700">
                                     <FaEnvelope className="mr-2 text-blue-500" />
-                                    <span>mazharul90006@gmail.com</span>
+                                    <span>mazharul90007@gmail.com</span>
                                 </div>
                                 <div className="flex items-center text-gray-700">
                                     <FaMapMarkerAlt className="mr-2 text-blue-500" />

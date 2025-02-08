@@ -1,43 +1,33 @@
 [
-    {
-      "id": 1,
-      "image": "https://i.ibb.co.com/b6fy53D/Recommendo.png",
-      "name": "Recommendo",
-      "type": "Product recommendation site",
-      "description": "Recommendo is a recommendation platform where users can submit their queries for product recommendations and provide suggestions to others.",
-      "liveLink": "",
-      "github-client": "",
-      "github-server": ""
-    },
-    {
-      "id": 2,
-      "image": "https://i.ibb.co.com/hXcNr9B/equisport.png",
-      "name": "EquiSports",
-      "type": "Sports Equipments e-commerce",
-      "description": "The Sports Equipment Online Store is a responsive e-commerce website designed to provide users with a platform to browse, purchase, and review various sports accessories, ranging from gear to apparel, catering to different sports disciplines. This project focuses on creating a dynamic, user-friendly shopping experience with full authentication and product management features.",
-      "liveLink": "",
-      "github-client": "",
-      "github-server": ""
-    },
-    {
-      "id": 3,
-      "image": "https://i.ibb.co.com/2MpSpMh/pet.png",
-      "name": "Peddy",
-      "type": "Pet Adaption Site",
-      "description": "Peddy is a platform dedicated to helping families find their perfect pet companion. It simplifies the adoption process by connecting users with a variety of pets, including puppies, kittens, and adult animals in need of loving homes. The site offers an easy way to browse and adopt, ensuring a heartwarming experience for both the pet and the adopter.",
-      "liveLink": "https://peddy-friend.netlify.app/",
-      "github-client": "",
-      "github-server": ""
-    },
-    {
-      "id": 4,
-      "image": "https://i.ibb.co.com/xXY3psn/coffee-club.png",
-      "name": "Coffee Club",
-      "type": "Coffee Shop site",
-      "description": "The 'Coffee Club' website offers a cozy, welcoming platform dedicated to coffee enthusiasts. It provides a space to explore various types of coffee, interact with other coffee lovers, and discover coffee-related content. The design is sleek, user-friendly, and includes engaging visuals that celebrate coffee culture. Visitors can enjoy browsing through different coffee blends, articles, and join the coffee community for an immersive experience.",
-      "liveLink": "https://coffee-club.netlify.app/",
-      "github-client": "",
-      "github-server": ""
-    }
-  ]
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/QFkSPm2f/nesttree.png",
+    "name": "NestTree",
+    "type": "Real estate marketplace website",
+    "description": "Nesttree is a dynamic marketplace where users can browse, list, and manage properties. The platform provides an intuitive experience for users looking to buy properties, and for agents and admins to manage listings.",
+    "liveLink": "https://nesttree-d03bc.web.app/",
+    "githubClient": "https://github.com/mazharul90007/nesttree-client",
+    "githubServer": "https://github.com/mazharul90007/nesttree-server"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/b6fy53D/Recommendo.png",
+    "name": "Recommendo",
+    "type": "Product recommendation site",
+    "description": "Recommendo is a recommendation platform where users can submit their queries for product recommendations and provide suggestions to others.",
+    "liveLink": "https://recommendo-b1c90.web.app/",
+    "githubClient": "https://github.com/mazharul90007/recommendo",
+    "githubServer": "https://github.com/mazharul90007/recommendo-server"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/hXcNr9B/equisport.png",
+    "name": "EquiSports",
+    "type": "Sports Equipments e-commerce",
+    "description": "The Sports Equipment Online Store is a responsive e-commerce website designed to provide users with a platform to browse, purchase, and review various sports accessories, ranging from gear to apparel, catering to different sports disciplines. This project focuses on creating a dynamic, user-friendly shopping experience with full authentication and product management features.",
+    "liveLink": "https://equisports-d7611.web.app/",
+    "githubClient": "https://github.com/mazharul90007/equiSports",
+    "githubServer": "https://github.com/mazharul90007/equiSports-Server"
+  }
   
+]

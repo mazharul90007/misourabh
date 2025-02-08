@@ -28,8 +28,8 @@ const educationData = [
 
 const Education = () => {
   return (
-    <div className="bg-secondary py-8">
-      <div className="px-8">
+    <div className="bg-secondary py-4 md:py-8" id="education">
+      <div className="px-4 md:px-8">
         <Title firstLetter={'E'} title={'ducation'}></Title>
       </div>
       <div>

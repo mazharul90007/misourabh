@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import cv from '../../../assets/cv3.png';
-import navbg from '../../../assets/navbg.png';
+// import navbg from '../../../assets/navbg.png';
 
 const Navbar = () => {
     const navList = <>
@@ -25,7 +25,7 @@ const Navbar = () => {
     </>;
 
     return (
-        <div className="navbar px-4" style={{ backgroundImage: `url(${navbg})`, backgroundRepeat: 'repeat' }}>
+        <div className="navbar px-4 bg-paper md:bg-none">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

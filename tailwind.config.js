@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         robotoSlab: ['Roboto Slab', 'serif'], // Add Roboto Slab
         roboto: ['Roboto', 'serif'],  // Add Roboto
+        fuggles: ["Fuggles", "serif"] //Fuggles
       },
       colors: {
         paper: '#F9F4DA',   // background paper

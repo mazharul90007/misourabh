@@ -27,11 +27,11 @@ const Skill = () => {
     ]
 
     return (
-        <div className="my-8 p-8 bg-secondary">
+        <div className="my-8 p-4 md:p-8 bg-secondary">
             <section className="grid md:grid-cols-2 gap-4">
                 <div className="md:col-span-1">
                    <Title firstLetter={'T'} title={'ech Skills'}></Title>
-                    <div className="grid md:grid-cols-2  gap-2 mb-16">
+                    <div className="grid grid-cols-2  gap-2 mb-16">
                         {skills.map((skill, index) => (
                             <div key={index} className="text-center p-4 shadow rounded-md bg-[#fcd2c3] w-full">
                                 <div className="flex items-center justify-center mb-2">
