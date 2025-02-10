@@ -3,7 +3,7 @@
 Welcome to my portfolio website! This is a personal platform where I showcase my **educational background**, **professional experiences**, **technical skills**, and **projects**. It reflects my journey as a developer and my passion for innovation in the tech industry.
 
 ## 🌐 Live Demo  
-Check out the live version of my portfolio here: [miSourabh](https://misourabh.netlify.app/)  
+Check out the live version of my portfolio here: [miSourabh](https://mi-sourabh.netlify.app/)  
 
 ---
 
@@ -28,7 +28,7 @@ Check out the live version of my portfolio here: [miSourabh](https://misourabh.n
 
 ## 📖 How to Use  
 
-1. Visit [miSourabh](https://misourabh.netlify.app/).  
+1. Visit [miSourabh](https://mi-sourabh.netlify.app/).  
 2. Explore different sections to learn about me, my skills, and my projects.  
 3. Reach out to me via the contact section for collaboration or queries.  
 
