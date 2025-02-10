@@ -34,11 +34,11 @@ const Banner = () => {
                                 }}
                             />
                         </div>
-                        <p className="font-semibold text-gray-500 text-center">
-                            I create user-friendly interfaces and responsive web applications <br /> for fast-growing startups.
+                        <p className="font-semibold text-gray-500 text-center w-11/12 md:w-9/12 mx auto">
+                            A passionate Junior Developer who loves creating user-friendly interfaces and building responsive web applications for fast-growing startups.
                         </p>
 
-                        <div className="flex justify-between items-center w-full pt-10">
+                        <div className="flex justify-between items-center w-full pt-20">
                             {/* Resume Button */}
                             <a href="/Resume_of_Sourabh.pdf" target="_blank" rel="noopener noreferrer">
                                 <button className="py-2 px-4 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 shadow font-robotoSlab font-bold">

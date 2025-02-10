@@ -31,11 +31,11 @@ const Sidebar = () => {
     
 
         return (
-            <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit text-sm font-semibold bg-paper md:bg-transparent py-1">
+            <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit font-semibold bg-paper md:bg-transparent py-1">
                 {menuItems.map((item) => (
                     <div
                         key={item.name}
-                        className={`p-4 gap-1 items-center shadow rounded-lg md:w-20 
+                        className={` p-2 md:p-4 gap-1 items-center shadow rounded-lg md:w-20 
                         hover:text-primary bg-secondary cursor-pointer relative transition-all duration-300
                         ${active === item.name ? "text-primary" : "text-gray-700"}
                      hover:scale-95`}

@@ -1,4 +1,4 @@
-# miSourabh - My Portfolio Website 🌟
+# mi-Sourabh - My Portfolio Website 🌟
 
 Welcome to my portfolio website! This is a personal platform where I showcase my **educational background**, **professional experiences**, **technical skills**, and **projects**. It reflects my journey as a developer and my passion for innovation in the tech industry.
 
