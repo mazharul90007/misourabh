@@ -1,6 +1,9 @@
 import { FaUser, FaPaperPlane, FaLaptopCode, FaDownload } from "react-icons/fa";
 import { useState } from "react";
 import { FaGraduationCap } from "react-icons/fa6";
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css"; // Import styles
+import "../../customButton.css"; // ✅ Correctly import custom styles
 
 const Sidebar = () => {
     const [active, setActive] = useState("BIO");
@@ -15,7 +18,7 @@ const Sidebar = () => {
 
     const handleSideButton = (item) => {
         setActive(item);
-    
+
         if (item === "BIO") {
             document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
         } else if (item === "EDUCATION") {
@@ -28,27 +31,24 @@ const Sidebar = () => {
             window.open("/Resume_of_Sourabh.pdf", "_blank"); // Opens the resume in a new tab
         }
     };
-    
 
-        return (
-            <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit font-semibold bg-paper md:bg-transparent py-1">
-                {menuItems.map((item) => (
-                    <div
-                        key={item.name}
-                        className={` p-2 md:p-4 gap-1 items-center shadow rounded-lg md:w-20 
-                        hover:text-primary bg-secondary cursor-pointer relative transition-all duration-300
-                        ${active === item.name ? "text-primary" : "text-gray-700"}
-                     hover:scale-95`}
-                        onClick={() => handleSideButton(item.name)}
-                    >
-                        <div className="flex flex-col items-center gap-1">
-                            <span className=" text-xl md:text-2xl">{item.icon}</span>
-                            <p className="text-xs md:text-md">{item.name}</p>
-                        </div>
+    return (
+        <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit font-semibold bg-paper md:bg-transparent py-1">
+            {menuItems.map((item) => (
+                <AwesomeButton 
+                    key={item.name} 
+                    type={`${active === item.name? 'secondary' : 'primary'}`}
+                    className="aws-btn"
+                    onPress={() => handleSideButton(item.name)}
+                >
+                    <div className="flex flex-col items-center gap-1">
+                        <span className="text-xl md:text-2xl">{item.icon}</span>
+                        <p className="text-xs md:text-md">{item.name}</p>
                     </div>
-                ))}
-            </div>
-        );
-    };
+                </AwesomeButton>
+            ))}
+        </div>
+    );
+};
 
-    export default Sidebar;
+export default Sidebar;
