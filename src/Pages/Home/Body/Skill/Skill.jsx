@@ -2,6 +2,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaCheck } from "react-icon
 import { SiTailwindcss, SiBootstrap, SiFirebase, SiExpress, SiMongodb, SiDaisyui } from "react-icons/si";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Title from "../../../Shared/Title/Title";
+import { Fade } from "react-awesome-reveal";
 
 const Skill = () => {
     const skills = [
@@ -19,35 +20,37 @@ const Skill = () => {
     ];
 
     const softSkills = [
-        {skill: 'Comunication Skills'},
-        {skill: 'Problem Solving'},
-        {skill: 'Teamwork & Collaboration'},
-        {skill: 'Adaptability & Continuous Learning'},
-        {skill: 'Attention to Detail'},
+        { skill: 'Comunication Skills' },
+        { skill: 'Problem Solving' },
+        { skill: 'Teamwork & Collaboration' },
+        { skill: 'Adaptability & Continuous Learning' },
+        { skill: 'Attention to Detail' },
     ]
 
     return (
         <div className="my-8 p-4 md:p-8 bg-secondary">
             <section className="grid md:grid-cols-2 gap-4">
                 <div className="md:col-span-1">
-                   <Title firstLetter={'T'} title={'ech Skills'}></Title>
+                    <Title firstLetter={'T'} title={'ech Skills'}></Title>
                     <div className="grid grid-cols-2  gap-2 mb-16">
                         {skills.map((skill, index) => (
-                            <div key={index} className="text-center p-4 shadow rounded-md bg-[#fcd2c3] w-full">
-                                <div className="flex items-center justify-center mb-2">
-                                    {skill.icon}
-                                    <p className="text-gray-500 font-medium ml-2">{skill.name}</p>
+                            <Fade key={index} direction="left" duration={1000}>
+                                <div key={index} className="text-center p-4 shadow rounded-md bg-[#fcd2c3] w-full">
+                                    <div className="flex items-center justify-center mb-2">
+                                        {skill.icon}
+                                        <p className="text-gray-500 font-medium ml-2">{skill.name}</p>
+                                    </div>
+                                    <div className="w-full">
+                                        <ProgressBar
+                                            completed={skill.progress}
+                                            bgColor={skill.color}
+                                            width="100%"
+                                            height={8}
+                                            isLabelVisible={false} // Hides percentage text
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-full">
-                                    <ProgressBar
-                                        completed={skill.progress}
-                                        bgColor={skill.color}
-                                        width="100%"
-                                        height={8}
-                                        isLabelVisible={false} // Hides percentage text
-                                    />
-                                </div>
-                            </div>
+                            </Fade>
                         ))}
                     </div>
                 </div>
@@ -55,20 +58,22 @@ const Skill = () => {
 
                 {/* Soft Skills */}
                 <div className="md:col-span-1 pl-5 md:border-l">
-                <Title firstLetter={'S'} title={'oft Skills'}></Title>
+                    <Title firstLetter={'S'} title={'oft Skills'}></Title>
                     <div className="space-y-3">
                         {
-                            softSkills.map((softSkill,index) =>
-                                <div key={index} className="flex items-center gap-2">
-                                    <span className="text-primary"><FaCheck /></span>
-                                    <p className="font-semibold text-gray-500">{softSkill.skill}</p>
-                                </div>
+                            softSkills.map((softSkill, index) =>
+                                <Fade key={index} direction="right">
+                                    <div key={index} className="flex items-center gap-2">
+                                        <span className="text-primary"><FaCheck /></span>
+                                        <p className="font-semibold text-gray-500">{softSkill.skill}</p>
+                                    </div>
+                                </Fade>
                             )
                         }
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 

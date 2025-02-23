@@ -30,11 +30,17 @@ const Projects = () => {
 
                             <p className='text-gray-400 flex-grow'>{project.description}</p>
                             <div className='mt-auto flex gap-2 text-sm'>
-                                <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Live</button>
+                                <a href={project?.liveLink} target='_blank'>
+                                    <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Live</button>
+                                </a>
 
-                                <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Client Code</button>
+                                <a href={project?.githubClient} target='_blank'>
+                                    <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Client Code</button>
+                                </a>
 
-                                <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Server Code</button>
+                                <a href={project?.githubServer} target='_blank'>
+                                    <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Server Code</button>
+                                </a>
                             </div>
                         </div>
                     </div>
