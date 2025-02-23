@@ -4,7 +4,7 @@
     --button-default-font-size: 16px;
     --button-default-border-radius: 5px;
     --button-horizontal-padding: 26px;
-    --button-raise-level: 5px;
+    --button-raise-level: 4px;
     --button-hover-pressure: 3;
     --transform-speed: 0.075s;
     --button-primary-color: #f3c8ad;
@@ -12,9 +12,9 @@
     --button-primary-color-light: #4c3016;
     --button-primary-color-hover: #f1bfa0;
     --button-primary-border: 0px solid #8c633c;
-    --button-secondary-color: #f5f138;
-    --button-secondary-color-dark: #b9b500;
+    --button-secondary-color: #f8c27b;
+    --button-secondary-color-dark: #c58026;
     --button-secondary-color-light: #615f00;
-    --button-secondary-color-hover: #fffb3e;
-    --button-secondary-border: 0px solid #FFFFFF;
+    --button-secondary-color-hover: #f8c27b;
+    --button-secondary-border: 0px solid #615f00;
     }
