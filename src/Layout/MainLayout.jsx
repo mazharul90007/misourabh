@@ -6,7 +6,7 @@ import Topbar from "../Components/Topbar/Topbar";
 const MainLayout = () => {
     return (
         <div className="bg-paper  font-roboto">
-            <div className="max-w-7xl mx-auto">
+            <div className="">
                 <div className="sticky top-0 z-50">
                     <Topbar></Topbar>
                 </div>

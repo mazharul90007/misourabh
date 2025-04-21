@@ -1,79 +1,158 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaCheck } from "react-icons/fa";
 import { SiTailwindcss, SiBootstrap, SiFirebase, SiExpress, SiMongodb, SiDaisyui } from "react-icons/si";
-import ProgressBar from "@ramonak/react-progress-bar";
+import { motion } from "framer-motion";
 import Title from "../../../Shared/Title/Title";
-import { Fade } from "react-awesome-reveal";
 
 const Skill = () => {
-    const skills = [
-        { name: "HTML5", icon: <FaHtml5 className="text-orange-600 text-2xl" />, progress: 95, color: "#EA580B" },
-        { name: "CSS3", icon: <FaCss3Alt className="text-blue-600 text-2xl" />, progress: 90, color: "#2663EB" },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-500 text-2xl" />, progress: 90, color: "#0DA5E9" },
-        { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600 text-2xl" />, progress: 85, color: "#9333EA" },
-        { name: "DaisyUI", icon: <SiDaisyui className="text-teal-500 text-2xl" />, progress: 95, color: "#13B8A6" },
-        { name: "JavaScript", icon: <FaJs className="text-yellow-500 text-2xl" />, progress: 90, color: "#EAB307" },
-        { name: "React", icon: <FaReact className="text-cyan-500 text-2xl" />, progress: 95, color: "#05B6D4" },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500 text-2xl" />, progress: 80, color: "#F97317" },
-        { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-2xl" />, progress: 70, color: "#21C55E" },
-        { name: "Express.js", icon: <SiExpress className="text-gray-700 text-2xl" />, progress: 75, color: "#374131" },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-2xl" />, progress: 70, color: "#16A34A" },
+    const techSkills = [
+        { name: "HTML5", icon: <FaHtml5 className="text-4xl" />, color: "from-orange-500 to-orange-700" },
+        { name: "CSS3", icon: <FaCss3Alt className="text-4xl" />, color: "from-blue-500 to-blue-700" },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-4xl" />, color: "from-cyan-400 to-blue-600" },
+        { name: "Bootstrap", icon: <SiBootstrap className="text-4xl" />, color: "from-purple-500 to-purple-700" },
+        { name: "DaisyUI", icon: <SiDaisyui className="text-4xl" />, color: "from-teal-400 to-emerald-600" },
+        { name: "JavaScript", icon: <FaJs className="text-4xl" />, color: "from-yellow-400 to-yellow-600" },
+        { name: "React", icon: <FaReact className="text-4xl" />, color: "from-cyan-400 to-blue-500" },
+        { name: "Firebase", icon: <SiFirebase className="text-4xl" />, color: "from-amber-500 to-orange-500" },
+        { name: "Node.js", icon: <FaNodeJs className="text-4xl" />, color: "from-green-500 to-green-700" },
+        { name: "Express.js", icon: <SiExpress className="text-4xl" />, color: "from-gray-500 to-gray-700" },
+        { name: "MongoDB", icon: <SiMongodb className="text-4xl" />, color: "from-green-600 to-green-800" },
     ];
 
     const softSkills = [
-        { skill: 'Comunication Skills' },
-        { skill: 'Problem Solving' },
-        { skill: 'Teamwork & Collaboration' },
-        { skill: 'Adaptability & Continuous Learning' },
-        { skill: 'Attention to Detail' },
-    ]
+        { skill: "Communication Skills" },
+        { skill: "Problem Solving" },
+        { skill: "Teamwork & Collaboration" },
+        { skill: "Adaptability" },
+        { skill: "Attention to Detail" },
+    ];
+
+    const card = {
+        hidden: { opacity: 0, y: 20 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: "spring",
+                stiffness: 120,
+                damping: 10,
+                duration: 0.5
+            }
+        },
+        hover: {
+            y: -5,
+            scale: 1.03,
+            transition: {
+                duration: 0.2,
+                ease: "easeOut"
+            }
+        }
+    };
+
+    const softSkillCard = {
+        hidden: { opacity: 0, y: 20 },
+        show: (index) => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: index * 0.1,
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                duration: 0.5
+            }
+        }),
+        hover: {
+            y: -3,
+            scale: 1.02,
+            transition: {
+                duration: 0.2,
+                ease: "easeOut"
+            }
+        }
+    };
+
+    const checkIcon = {
+        hidden: { scale: 0 },
+        show: {
+            scale: 1,
+            transition: {
+                type: "spring",
+                stiffness: 150,
+                damping: 8
+            }
+        }
+    };
 
     return (
-        <div className="my-8 p-4 md:p-8 bg-secondary">
-            <section className="grid md:grid-cols-2 gap-4">
-                <div className="md:col-span-1">
-                    <Title firstLetter={'T'} title={'ech Skills'}></Title>
-                    <div className="grid grid-cols-2  gap-2 mb-16">
-                        {skills.map((skill, index) => (
-                            <Fade key={index} direction="left" duration={1000}>
-                                <div key={index} className="text-center p-4 shadow rounded-md bg-[#fcd2c3] w-full">
-                                    <div className="flex items-center justify-center mb-2">
-                                        {skill.icon}
-                                        <p className="text-gray-500 font-medium ml-2">{skill.name}</p>
-                                    </div>
-                                    <div className="w-full">
-                                        <ProgressBar
-                                            completed={skill.progress}
-                                            bgColor={skill.color}
-                                            width="100%"
-                                            height={8}
-                                            isLabelVisible={false} // Hides percentage text
-                                        />
-                                    </div>
-                                </div>
-                            </Fade>
-                        ))}
-                    </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="my-8 p-4 md:p-8 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800"
+        >
+            {/* Tech Stack Section */}
+            <div className="mb-12">
+                <Title firstLetter={'T'} title={'ech Skills'} />
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {techSkills.map((skill, index) => (
+                        <motion.div
+                            key={index}
+                            className="group rounded-xl p-6 text-center backdrop-blur-sm bg-white/70 dark:bg-gray-800/70 shadow-lg hover:shadow-xl border border-white/20 dark:border-gray-700/50"
+                            variants={card}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.2 }}
+                            whileHover="hover"
+                        >
+                            <motion.div
+                                className={`w-16 h-16 mx-auto rounded-2xl mb-4 flex items-center justify-center bg-gradient-to-br ${skill.color} text-white`}
+                            >
+                                {skill.icon}
+                            </motion.div>
+                            <h3 className="font-bold text-gray-800 dark:text-gray-100 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">
+                                {skill.name}
+                            </h3>
+                        </motion.div>
+                    ))}
                 </div>
-                {/* Technical Skills */}
+            </div>
 
-                {/* Soft Skills */}
-                <div className="md:col-span-1 pl-5 md:border-l">
-                    <Title firstLetter={'S'} title={'oft Skills'}></Title>
-                    <div className="space-y-3">
-                        {
-                            softSkills.map((softSkill, index) =>
-                                <Fade key={index} direction="right">
-                                    <div key={index} className="flex items-center gap-2">
-                                        <span className="text-primary"><FaCheck /></span>
-                                        <p className="font-semibold text-gray-500">{softSkill.skill}</p>
-                                    </div>
-                                </Fade>
-                            )
-                        }
-                    </div>
-                </div>
-            </section >
-        </div >
+            {/* Soft Skills Section */}
+            <div>
+                <Title firstLetter={'S'} title={'oft Skills'} />
+                <motion.div
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-6"
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.2 }}
+                >
+                    {softSkills.map((softSkill, index) => (
+                        <motion.div
+                            key={index}
+                            className="flex items-center gap-3 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg shadow-md border border-white/30 dark:border-gray-700/50"
+                            variants={softSkillCard}
+                            custom={index}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.2 }}
+                            whileHover="hover"
+                        >
+                            <motion.span
+                                className="text-primary"
+                                variants={checkIcon}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true }}
+                            >
+                                <FaCheck />
+                            </motion.span>
+                            <p className="font-medium text-gray-700 dark:text-gray-200">{softSkill.skill}</p>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </div>
+        </motion.div>
     );
 };
 

@@ -1,4 +1,4 @@
-import { FaAward, FaGraduationCap, FaUniversity } from "react-icons/fa";
+import { FaAward, FaGraduationCap, FaSchool, FaUniversity } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -23,6 +23,15 @@ const educationData = [
     group: "Science",
     address: "34/B, West Farmgate - Tejturi Bazar Rd, Dhaka, Bangladesh",
     icon: <FaUniversity />,
+  },
+  {
+    id: 3,
+    degree: "Secondary School Certificate (SSC)",
+    institution: "Galachipa Government Model Secondary School",
+    year: "2010 - 2012",
+    group: "Science",
+    address: "Galachipa, Patuakhali, Barishal, Bangladesh",
+    icon: <FaSchool />,
   },
 ];
 
@@ -71,14 +80,14 @@ const Education = () => {
           <Title firstLetter={'E'} title={'ducation'}></Title>
         </div>
         <div>
-          <VerticalTimeline lineColor="#F6A98F" layout="1-column-left" animate>
+          <VerticalTimeline lineColor="#11B98E" layout="1-column-left" animate>
             {educationData.map((edu) => (
               <VerticalTimelineElement
                 key={edu.id}
                 className="vertical-timeline-element--education"
                 contentStyle={{ textAlign: "left" }}
                 contentArrowStyle={{ borderRight: '7px solid  white' }} // Hides the arrow
-                iconStyle={{ background: "#F6A98F", color: "#fff" }}
+                iconStyle={{ background: "#11B98E", color: "#fff" }}
                 icon={edu.icon}
                 position="right" // Aligns all items on the right side
               >
@@ -119,14 +128,14 @@ const Education = () => {
           <span className="text-primary">C</span>ourses & <span className="text-primary">C</span>ertifications
         </div>
         <div>
-          <VerticalTimeline lineColor="#F6A98F" layout="1-column-left" animate>
+          <VerticalTimeline lineColor="#11B98E" layout="1-column-left" animate>
             {certificationData.map((certificate) => (
               <VerticalTimelineElement
                 key={certificate.id}
                 className="vertical-timeline-element--education"
                 contentStyle={{ textAlign: "left" }}
                 contentArrowStyle={{ borderRight: '7px solid  white' }} // Hides the arrow
-                iconStyle={{ background: "#F6A98F", color: "#fff" }}
+                iconStyle={{ background: "#11B98E", color: "#fff" }}
                 icon={certificate.icon}
                 position="right" // Aligns all items on the right side
               >
