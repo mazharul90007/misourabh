@@ -41,8 +41,8 @@ const Sidebar = () => {
                     className="aws-btn"
                     onPress={() => handleSideButton(item.name)}
                 >
-                    <div className="flex flex-col items-center gap-1">
-                        <span className="text-xl md:text-2xl">{item.icon}</span>
+                    <div className="flex flex-col items-center gap-1 text-white">
+                        <span className="text-xl md:text-2xl text-white">{item.icon}</span>
                         <p className="text-xs md:text-md">{item.name}</p>
                     </div>
                 </AwesomeButton>

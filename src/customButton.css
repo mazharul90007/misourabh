@@ -7,14 +7,16 @@
     --button-raise-level: 4px;
     --button-hover-pressure: 3;
     --transform-speed: 0.075s;
-    --button-primary-color: #f3c8ad;
-    --button-primary-color-dark: #734922;
-    --button-primary-color-light: #4c3016;
-    --button-primary-color-hover: #f1bfa0;
-    --button-primary-border: 0px solid #8c633c;
-    --button-secondary-color: #f8c27b;
-    --button-secondary-color-dark: #c58026;
-    --button-secondary-color-light: #615f00;
-    --button-secondary-color-hover: #f8c27b;
-    --button-secondary-border: 0px solid #615f00;
-    }
+
+    --button-primary-color: #11B98E;
+    --button-primary-color-dark: #087759;
+    --button-primary-color-light: #FFFF;
+    --button-primary-color-hover: #0EA57D;
+    --button-primary-border: 0px solid #054e3b;
+
+    --button-secondary-color: #FF9E7D;
+    --button-secondary-color-dark: #D97A56;
+    --button-secondary-color-light: #FFE8E0;
+    --button-secondary-color-hover: #FF8A5F;
+    --button-secondary-border: 0px solid #D97A56;
+}

@@ -1,6 +1,7 @@
 import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
 import profileImg from '../../../../assets/profileImg.png';
 import Typewriter from 'typewriter-effect';
+import { FaFacebook } from "react-icons/fa";
 
 const Banner = () => {
     return (
@@ -48,6 +49,11 @@ const Banner = () => {
 
                             {/* Social Links */}
                             <div className="flex gap-3 text-xl">
+                            <a href="https://www.facebook.com/mazharul90007" target="_blank" rel="noopener noreferrer">
+                                    <div className="p-2 border border-primary border-b-2 border-r-2 text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 shadow font-robotoSlab font-bold">
+                                        <FaFacebook />
+                                    </div>
+                                </a>
                                 
                                 <a href="https://www.linkedin.com/in/mazharul-islam-sourabh-4111b3227/" target="_blank" rel="noopener noreferrer">
                                     <div className="p-2 border border-primary border-b-2 border-r-2 text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 shadow font-robotoSlab font-bold">
