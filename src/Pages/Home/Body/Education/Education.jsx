@@ -39,7 +39,7 @@ const certificationData = [
   {
     id: 1,
     courseName: 'Complete Web Development Course',
-    institution: 'Programming Hero',
+    institution: 'Programming Hero (Batch-10)',
     period: 'June 2024 to January 2025',
     address:'Online',
     icon: <FaAward />
@@ -95,24 +95,24 @@ const Education = () => {
                   {edu.degree}
                 </h2>
                 <div className="space-y-1">
-                  <p className="text-gray-400">
-                    <span className="text-gray-500 font-semibold">
+                  <p className="text-gray-500">
+                    <span className="text-gray-600 font-semibold">
                       Institution:
                     </span>{" "}
                     {edu.institution}
                   </p>
-                  <p className="text-gray-400">
-                    <span className="text-gray-500 font-semibold">Year:</span>{" "}
+                  <p className="text-gray-500">
+                    <span className="text-gray-600 font-semibold">Year:</span>{" "}
                     {edu.year}
                   </p>
                   {edu.group && (
-                    <p className="text-gray-400">
-                      <span className="text-gray-500 font-semibold">Group:</span>{" "}
+                    <p className="text-gray-500">
+                      <span className="text-gray-600 font-semibold">Group:</span>{" "}
                       {edu.group}
                     </p>
                   )}
-                  <p className="text-gray-400">
-                    <span className="text-gray-500 font-semibold">Address:</span>{" "}
+                  <p className="text-gray-500">
+                    <span className="text-gray-600 font-semibold">Address:</span>{" "}
                     {edu.address}
                   </p>
                 </div>
@@ -139,22 +139,22 @@ const Education = () => {
                 icon={certificate.icon}
                 position="right" // Aligns all items on the right side
               >
-                <h2 className="text-xl text-gray-500 font-semibold">
+                <h2 className="text-xl text-gray-600 font-semibold">
                   {certificate.courseName}
                 </h2>
                 <div className="space-y-1">
-                  <p className="text-gray-400">
-                    <span className="text-gray-500 font-semibold">
+                  <p className="text-gray-500">
+                    <span className="text-gray-600 font-semibold">
                       Institution:
                     </span>{" "}
                     {certificate.institution}
                   </p>
-                  <p className="text-gray-400">
-                    <span className="text-gray-500 font-semibold">Duration:</span>{" "}
+                  <p className="text-gray-500">
+                    <span className="text-gray-600 font-semibold">Duration:</span>{" "}
                     {certificate?.period}
                   </p>
-                  <p className="text-gray-400">
-                    <span className="text-gray-500 font-semibold">Address:</span>{" "}
+                  <p className="text-gray-500">
+                    <span className="text-gray-600 font-semibold">Address:</span>{" "}
                     {certificate.address}
                   </p>
                 </div>

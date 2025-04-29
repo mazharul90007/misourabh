@@ -1,7 +1,8 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaCheck } from "react-icons/fa";
-import { SiTailwindcss, SiBootstrap, SiFirebase, SiExpress, SiMongodb, SiDaisyui } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaCheck, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiBootstrap, SiFirebase, SiExpress, SiMongodb, SiDaisyui, SiFigma, SiAdobephotoshop } from "react-icons/si";
 import { motion } from "framer-motion";
 import Title from "../../../Shared/Title/Title";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 const Skill = () => {
     const techSkills = [
@@ -16,6 +17,10 @@ const Skill = () => {
         { name: "Node.js", icon: <FaNodeJs className="text-4xl" />, color: "from-green-500 to-green-700" },
         { name: "Express.js", icon: <SiExpress className="text-4xl" />, color: "from-gray-500 to-gray-700" },
         { name: "MongoDB", icon: <SiMongodb className="text-4xl" />, color: "from-green-600 to-green-800" },
+        { name: "GitHub", icon: <FaGithub className="text-4xl" />, color: "from-gray-800 to-gray-900" },
+        { name: "VSCode", icon: <BiLogoVisualStudio className="text-4xl" />, color: "from-blue-500 to-blue-700" },
+        { name: "Figma", icon: <SiFigma className="text-4xl" />, color: "from-purple-400 to-pink-500" },
+        { name: "Photoshop", icon: <SiAdobephotoshop className="text-4xl" />, color: "from-blue-400 to-indigo-600" },
     ];
 
     const softSkills = [
@@ -89,16 +94,16 @@ const Skill = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="my-8 p-4 md:p-8 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800"
+            className="my-8 p-4 md:p-8 bg-secondary"
         >
             {/* Tech Stack Section */}
             <div className="mb-12">
                 <Title firstLetter={'T'} title={'ech Skills'} />
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                     {techSkills.map((skill, index) => (
                         <motion.div
                             key={index}
-                            className="group rounded-xl p-6 text-center backdrop-blur-sm bg-white/70 dark:bg-gray-800/70 shadow-lg hover:shadow-xl border border-white/20 dark:border-gray-700/50"
+                            className="group rounded-xl p-6 text-center backdrop-blur-sm bg-white/70 shadow-lg hover:shadow-xl border border-white/20 "
                             variants={card}
                             initial="hidden"
                             whileInView="show"
@@ -110,7 +115,7 @@ const Skill = () => {
                             >
                                 {skill.icon}
                             </motion.div>
-                            <h3 className="font-bold text-gray-800 dark:text-gray-100 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">
+                            <h3 className="font-bold text-gray-800  group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">
                                 {skill.name}
                             </h3>
                         </motion.div>
@@ -130,7 +135,7 @@ const Skill = () => {
                     {softSkills.map((softSkill, index) => (
                         <motion.div
                             key={index}
-                            className="flex items-center gap-3 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg shadow-md border border-white/30 dark:border-gray-700/50"
+                            className="flex items-center gap-3 p-4 bg-white/80 rounded-lg shadow-md border border-white/30"
                             variants={softSkillCard}
                             custom={index}
                             initial="hidden"
@@ -147,7 +152,7 @@ const Skill = () => {
                             >
                                 <FaCheck />
                             </motion.span>
-                            <p className="font-medium text-gray-700 dark:text-gray-200">{softSkill.skill}</p>
+                            <p className="font-medium text-gray-700">{softSkill.skill}</p>
                         </motion.div>
                     ))}
                 </motion.div>

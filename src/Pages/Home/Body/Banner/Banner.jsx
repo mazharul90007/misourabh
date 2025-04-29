@@ -13,13 +13,13 @@ const Banner = () => {
                         <img
                             src={profileImg}
                             alt="A professional portrait"
-                            className="rounded-lg max-w-full shadow-xl border border-r-4 border-b-4 border-black h-52 md:h-60 bg-paper"
+                            className="rounded-lg max-w-full shadow-xl border border-r-4 border-b-4 border-gray-700 h-52 md:h-60 bg-paper"
                         />
                     </div>
 
                     {/* Content Section */}
                     <div className="flex flex-col justify-start items-center space-y-4 w-full">
-                        <h1 className="text-4xl md:text-5xl font-robotoSlab font-semibold text-center">
+                        <h1 className="text-4xl md:text-5xl font-robotoSlab font-semibold text-center text-gray-700">
                             Mazharul Islam Sourabh
                         </h1>
 

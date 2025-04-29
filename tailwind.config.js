@@ -14,9 +14,9 @@ export default {
         fuggles: ["Fuggles", "serif"] //Fuggles
       },
       colors: {
-        paper: '#FFFFFF',   // background paper
+        background: '#f5f5f5',   // background color
         primary: '#11B98E', //icon color
-        secondary: '#ededed' //bg color
+        secondary: '#e5e7eb' // section bg color
       },
     },
   },

@@ -43,7 +43,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="bg-secondary p-4 md:p-8" id="contact">
+        <div className="bg-secondary p-4 md:p-8 mb-8" id="contact">
             <div className="">
                 <Title firstLetter={'C'} title={'ontact Me'}></Title>
             </div>
@@ -54,12 +54,6 @@ const Contact = () => {
                     <div className=" md:w-1/2 flex flex-col items-center p-6 shadow-md">
                         {/* Image */}
                         <div className="w-60 h-60">
-                            {/* Placeholder for image */}
-                            {/* <img
-                                src="https://via.placeholder.com/100"
-                                alt="Profile"
-                                className="object-cover"
-                            /> */}
                             <Lottie animationData={emailAnimation}></Lottie>
                         </div>
 
