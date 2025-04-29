@@ -13,7 +13,7 @@ const Banner = () => {
                         <img
                             src={profileImg}
                             alt="A professional portrait"
-                            className="rounded-lg max-w-full shadow-xl border border-r-4 border-b-4 border-gray-700 h-52 md:h-60 bg-paper"
+                            className="rounded-lg max-w-full shadow-xl border border-r-4 border-b-4 border-gray-700 h-52 md:h-60 bg-background"
                         />
                     </div>
 

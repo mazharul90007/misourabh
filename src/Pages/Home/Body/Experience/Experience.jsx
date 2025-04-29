@@ -13,7 +13,7 @@ const Experience = () => {
                         <FaBuilding className="text-primary text-3xl" />
                         <div>
                             <h3 className="text-xl font-semibold text-gray-800">QuikMart, Newcastle, Australia</h3>
-                            <p className="text-gray-500 text-sm">January 1, 2023 – June 30, 2023</p>
+                            <p className="text-gray-500 text-sm">January 1, 2024 – June 30, 2024</p>
                         </div>
                     </div>
 

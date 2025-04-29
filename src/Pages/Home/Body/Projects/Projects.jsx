@@ -26,9 +26,9 @@ const Projects = () => {
                         {/* deacription */}
                         <div className='md:col-span-5 flex flex-col flex-grow px-3 md:px-0 py-3'>
                             <h3 className='text-xl font-semibold text-primary font-robotoSlab'>{project.name}</h3>
-                            <p className='text-gray-500 font-semibold mb-3'>{project.type}</p>
+                            <p className='text-gray-600 font-semibold mb-3'>{project.type}</p>
 
-                            <p className='text-gray-400 flex-grow'>{project.description}</p>
+                            <p className='text-gray-500 flex-grow'>{project.description}</p>
                             <div className='mt-auto flex gap-2 text-sm'>
                                 <a href={project?.liveLink} target='_blank'>
                                     <button className='py-1 px-2 border border-primary border-b-2 border-r-2  text-gray-500 rounded-md hover:text-primary hover:scale-95 transition-transform duration-300 font-robotoSlab font-medium'>Live</button>

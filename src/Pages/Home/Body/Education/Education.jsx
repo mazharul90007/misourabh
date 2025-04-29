@@ -128,7 +128,7 @@ const Education = () => {
           <span className="text-primary">C</span>ourses & <span className="text-primary">C</span>ertifications
         </div>
         <div>
-          <VerticalTimeline lineColor="#11B98E" layout="1-column-left" animate>
+          <VerticalTimeline lineColor="#11B98E" layout="1-column-left" animate background="#DC2626">
             {certificationData.map((certificate) => (
               <VerticalTimelineElement
                 key={certificate.id}
@@ -137,7 +137,8 @@ const Education = () => {
                 contentArrowStyle={{ borderRight: '7px solid  white' }} // Hides the arrow
                 iconStyle={{ background: "#11B98E", color: "#fff" }}
                 icon={certificate.icon}
-                position="right" // Aligns all items on the right side
+                position="right"
+                 // Aligns all items on the right side
               >
                 <h2 className="text-xl text-gray-600 font-semibold">
                   {certificate.courseName}

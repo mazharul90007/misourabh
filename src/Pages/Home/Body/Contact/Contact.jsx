@@ -51,7 +51,7 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row  border  rounded-lg shadow-lg">
 
                     {/* Description Section */}
-                    <div className=" md:w-1/2 flex flex-col items-center p-6 shadow-md">
+                    <div className=" md:w-1/2 flex flex-col items-center p-6 shadow-md bg-[#d2d4d8]">
                         {/* Image */}
                         <div className="w-60 h-60">
                             <Lottie animationData={emailAnimation}></Lottie>
