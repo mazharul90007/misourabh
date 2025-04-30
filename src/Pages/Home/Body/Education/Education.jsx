@@ -128,7 +128,7 @@ const Education = () => {
           <span className="text-primary">C</span>ourses & <span className="text-primary">C</span>ertifications
         </div>
         <div>
-          <VerticalTimeline lineColor="#11B98E" layout="1-column-left" animate background="#DC2626">
+          <VerticalTimeline lineColor="#11B98E" layout="1-column-left" animate>
             {certificationData.map((certificate) => (
               <VerticalTimelineElement
                 key={certificate.id}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
     return (
-        <div className="bg-paper min-h-screen flex flex-col items-center justify-center">
+        <div className="bg-background min-h-screen flex flex-col items-center justify-center">
             {/* Lottie Animation */}
             <div className="w-10/12 md:w-6/12 h-auto">
                 <Lottie animationData={error} aria-label="404 error animation" />

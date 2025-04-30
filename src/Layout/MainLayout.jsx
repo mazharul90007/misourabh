@@ -5,20 +5,20 @@ import Topbar from "../Components/Topbar/Topbar";
 
 const MainLayout = () => {
     return (
-        <div className="bg-paper  font-roboto">
+        <div className="bg-background  font-roboto">
             <div className="">
                 <div className="sticky top-0 z-50">
                     <Topbar></Topbar>
                 </div>
                 {/* Sidebar & Content */}
-                <div className="grid md:grid-cols-12 gap-1 w-[98%]  md:w-[96%] mx-auto">
+                <div className="flex flex-col lg:flex-row gap-4 w-[98%]  md:w-[96%] mx-auto">
                     {/* Sticky Sidebar */}
-                    <div className="md:col-span-2 mx-auto md:h-[calc(100vh-130px)] sticky top-12 md:top-16 lg:top-32 overflow-y-auto z-30">
+                    <div className="w-[100%] lg:w-[10%] mx-auto md:h-[calc(100vh-130px)] sticky top-12 md:top-16 lg:top-32 overflow-y-auto z-30">
                         <Sidebar />
                     </div>
 
                     {/* Scrollable Content */}
-                    <div className="md:col-span-10 min-h-[calc(100vh-288px)] overflow-y-auto">
+                    <div className="w-[100%] lg:w-[90%] min-h-[calc(100vh-288px)] overflow-y-auto">
                         <Outlet />
                     </div>
                 </div>
