@@ -41,7 +41,7 @@ const certificationData = [
     courseName: 'Complete Web Development Course',
     institution: 'Programming Hero (Batch-10)',
     period: 'June 2024 to January 2025',
-    address:'Online',
+    address: 'Online',
     icon: <FaAward />
   },
   {
@@ -49,7 +49,7 @@ const certificationData = [
     courseName: 'Professional Web Design',
     institution: 'BASIS SEIP ',
     period: '9th April 2023 to 25th June 2023',
-    address:'Karwan Bazar, Dhaka, Bangladesh',
+    address: 'Karwan Bazar, Dhaka, Bangladesh',
     icon: <FaAward />
   },
   {
@@ -57,7 +57,7 @@ const certificationData = [
     courseName: 'Professional Web Design and Development ',
     institution: 'UY LAB ',
     period: '30th January 2023 to 24th July 2023',
-    address:'Wireless Gate Rd, Mohakhali, Dhaka, Bangladesh',
+    address: 'Wireless Gate Rd, Mohakhali, Dhaka, Bangladesh',
     icon: <FaAward />
   },
   {
@@ -65,7 +65,7 @@ const certificationData = [
     courseName: 'Professional English Communication Skills Certification',
     institution: 'Workplace Skills Development Academy New Zealand (WSDA)',
     period: '18th June 2023',
-    address:'BITM',
+    address: 'BITM',
     icon: <FaAward />
   },
 ]
@@ -85,8 +85,12 @@ const Education = () => {
               <VerticalTimelineElement
                 key={edu.id}
                 className="vertical-timeline-element--education"
-                contentStyle={{ textAlign: "left" }}
-                contentArrowStyle={{ borderRight: '7px solid  white' }} // Hides the arrow
+                contentStyle={{
+                  textAlign: "left",
+                  background: "#f3f4f6",
+                  boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  #f3f4f6' }} // Hides the arrow
                 iconStyle={{ background: "#11B98E", color: "#fff" }}
                 icon={edu.icon}
                 position="right" // Aligns all items on the right side
@@ -124,7 +128,7 @@ const Education = () => {
 
       {/* Certification */}
       <div className="md:col-span-1">
-        <div className="text-2xl font-robotoSlab mb-5 font-semibold border-b border-gray-400 pb-3 ml-5">
+        <div className="text-2xl font-robotoSlab mb-5 font-semibold border-b border-gray-400 pb-3 ml-5 text-gray-700">
           <span className="text-primary">C</span>ourses & <span className="text-primary">C</span>ertifications
         </div>
         <div>
@@ -133,12 +137,16 @@ const Education = () => {
               <VerticalTimelineElement
                 key={certificate.id}
                 className="vertical-timeline-element--education"
-                contentStyle={{ textAlign: "left" }}
-                contentArrowStyle={{ borderRight: '7px solid  white' }} // Hides the arrow
+                contentStyle={{
+                  textAlign: "left",
+                  background: "#f3f4f6",
+                  boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  #f3f4f6' }} // Hides the arrow
                 iconStyle={{ background: "#11B98E", color: "#fff" }}
                 icon={certificate.icon}
                 position="right"
-                 // Aligns all items on the right side
+              // Aligns all items on the right side
               >
                 <h2 className="text-xl text-gray-600 font-semibold">
                   {certificate.courseName}
