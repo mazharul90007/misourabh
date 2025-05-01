@@ -111,7 +111,7 @@ const Skill = () => {
                             whileHover="hover"
                         >
                             <motion.div
-                                className={`w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br ${skill.color} text-white`} // Reduced size
+                                className={`w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br ${skill.color} text-white`}
                             >
                                 {skill.icon}
                             </motion.div>
