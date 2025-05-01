@@ -48,10 +48,10 @@ const Contact = () => {
                 <Title firstLetter={'C'} title={'ontact Me'}></Title>
             </div>
             <div className="">
-                <div className="flex flex-col md:flex-row  border  rounded-lg shadow-lg">
+                <div className="flex flex-col md:flex-row rounded-lg shadow-md">
 
                     {/* Description Section */}
-                    <div className=" md:w-1/2 flex flex-col items-center p-6 shadow-md bg-[#d2d4d8]">
+                    <div className=" md:w-1/2 flex flex-col items-center p-6 ">
                         {/* Image */}
                         <div className="w-60 h-60">
                             <Lottie animationData={emailAnimation}></Lottie>
