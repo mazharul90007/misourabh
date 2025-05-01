@@ -33,7 +33,7 @@ const Sidebar = () => {
     };
 
     return (
-        <div className="grid grid-cols-5 md:grid-cols-1 gap-2 items-center w-fit font-semibold bg-paper md:bg-transparent py-1">
+        <div className="grid grid-cols-5 lg:grid-cols-1 gap-2 items-center w-fit font-semibold bg-paper lg:bg-transparent py-1 mx-auto">
             {menuItems.map((item) => (
                 <AwesomeButton 
                     key={item.name} 

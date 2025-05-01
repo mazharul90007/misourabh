@@ -123,8 +123,8 @@ const Education = () => {
       </div>
 
       {/* Certification */}
-      <div className="md:col-span-1 md:border-l">
-        <div className="text-2xl font-robotoSlab mb-5 font-semibold border-b-2 pb-3 ml-5">
+      <div className="md:col-span-1">
+        <div className="text-2xl font-robotoSlab mb-5 font-semibold border-b border-gray-400 pb-3 ml-5">
           <span className="text-primary">C</span>ourses & <span className="text-primary">C</span>ertifications
         </div>
         <div>

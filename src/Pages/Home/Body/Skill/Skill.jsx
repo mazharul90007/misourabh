@@ -6,21 +6,21 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 
 const Skill = () => {
     const techSkills = [
-        { name: "HTML5", icon: <FaHtml5 className="text-4xl" />, color: "from-orange-500 to-orange-700" },
-        { name: "CSS3", icon: <FaCss3Alt className="text-4xl" />, color: "from-blue-500 to-blue-700" },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-4xl" />, color: "from-cyan-400 to-blue-600" },
-        { name: "Bootstrap", icon: <SiBootstrap className="text-4xl" />, color: "from-purple-500 to-purple-700" },
-        { name: "DaisyUI", icon: <SiDaisyui className="text-4xl" />, color: "from-teal-400 to-emerald-600" },
-        { name: "JavaScript", icon: <FaJs className="text-4xl" />, color: "from-yellow-400 to-yellow-600" },
-        { name: "React", icon: <FaReact className="text-4xl" />, color: "from-cyan-400 to-blue-500" },
-        { name: "Firebase", icon: <SiFirebase className="text-4xl" />, color: "from-amber-500 to-orange-500" },
-        { name: "Node.js", icon: <FaNodeJs className="text-4xl" />, color: "from-green-500 to-green-700" },
-        { name: "Express.js", icon: <SiExpress className="text-4xl" />, color: "from-gray-500 to-gray-700" },
-        { name: "MongoDB", icon: <SiMongodb className="text-4xl" />, color: "from-green-600 to-green-800" },
-        { name: "GitHub", icon: <FaGithub className="text-4xl" />, color: "from-gray-800 to-gray-900" },
-        { name: "VSCode", icon: <BiLogoVisualStudio className="text-4xl" />, color: "from-blue-500 to-blue-700" },
-        { name: "Figma", icon: <SiFigma className="text-4xl" />, color: "from-purple-400 to-pink-500" },
-        { name: "Photoshop", icon: <SiAdobephotoshop className="text-4xl" />, color: "from-blue-400 to-indigo-600" },
+        { name: "HTML5", icon: <FaHtml5 className="text-3xl" />, color: "from-orange-500 to-orange-700" },
+        { name: "CSS3", icon: <FaCss3Alt className="text-3xl" />, color: "from-blue-500 to-blue-700" },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-3xl" />, color: "from-cyan-400 to-blue-600" },
+        { name: "Bootstrap", icon: <SiBootstrap className="text-3xl" />, color: "from-purple-500 to-purple-700" },
+        { name: "DaisyUI", icon: <SiDaisyui className="text-3xl" />, color: "from-teal-400 to-emerald-600" },
+        { name: "JavaScript", icon: <FaJs className="text-3xl" />, color: "from-yellow-400 to-yellow-600" },
+        { name: "React", icon: <FaReact className="text-3xl" />, color: "from-cyan-400 to-blue-500" },
+        { name: "Firebase", icon: <SiFirebase className="text-3xl" />, color: "from-amber-500 to-orange-500" },
+        { name: "Node.js", icon: <FaNodeJs className="text-3xl" />, color: "from-green-500 to-green-700" },
+        { name: "Express.js", icon: <SiExpress className="text-3xl" />, color: "from-gray-500 to-gray-700" },
+        { name: "MongoDB", icon: <SiMongodb className="text-3xl" />, color: "from-green-600 to-green-800" },
+        { name: "GitHub", icon: <FaGithub className="text-3xl" />, color: "from-gray-800 to-gray-900" },
+        { name: "VSCode", icon: <BiLogoVisualStudio className="text-3xl" />, color: "from-blue-500 to-blue-700" },
+        { name: "Figma", icon: <SiFigma className="text-3xl" />, color: "from-purple-400 to-pink-500" },
+        { name: "Photoshop", icon: <SiAdobephotoshop className="text-3xl" />, color: "from-blue-400 to-indigo-600" },
     ];
 
     const softSkills = [
@@ -99,11 +99,11 @@ const Skill = () => {
             {/* Tech Stack Section */}
             <div className="mb-12">
                 <Title firstLetter={'T'} title={'ech Skills'} />
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                     {techSkills.map((skill, index) => (
                         <motion.div
                             key={index}
-                            className="group rounded-xl p-6 text-center backdrop-blur-sm bg-white/70 shadow-lg hover:shadow-xl border border-white/20 "
+                            className="group rounded-xl p-3 text-center backdrop-blur-sm bg-white/70 shadow-md hover:shadow-lg border border-white/20 flex items-center gap-4" // Changed here
                             variants={card}
                             initial="hidden"
                             whileInView="show"
@@ -111,11 +111,11 @@ const Skill = () => {
                             whileHover="hover"
                         >
                             <motion.div
-                                className={`w-16 h-16 mx-auto rounded-2xl mb-4 flex items-center justify-center bg-gradient-to-br ${skill.color} text-white`}
+                                className={`w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br ${skill.color} text-white`} // Reduced size
                             >
                                 {skill.icon}
                             </motion.div>
-                            <h3 className="font-bold text-gray-800  group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">
+                            <h3 className="font-bold text-gray-800 text-base group-hover:text-transparent group-hover:bg-clip-text group-hover:text-primary">
                                 {skill.name}
                             </h3>
                         </motion.div>

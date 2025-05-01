@@ -16,27 +16,27 @@ const AboutMe = () => {
 
                 <div className="space-y-2 my-8">
                     {/* Age */}
-                    <div className="flex justify-between items-center border-b pb-1">
+                    <div className="flex justify-between items-center border-b border-gray-400 pb-1">
                         <p className="py-1 px-3 bg-primary text-secondary rounded">Age</p>
                         <p className="text-gray-500 text-lg">28</p>
                     </div>
                     {/* Residence */}
-                    <div className="flex justify-between items-center border-b pb-1">
+                    <div className="flex justify-between items-center border-b border-gray-400 pb-1">
                         <p className="py-1 px-3 bg-primary text-secondary rounded">Residence</p>
                         <p className="text-gray-500 text-lg">Bangladesh</p>
                     </div>
                     {/* Email */}
-                    <div className="flex justify-between items-center border-b pb-1">
+                    <div className="flex justify-between items-center border-b border-gray-400 pb-1">
                         <p className="py-1 px-3 bg-primary text-secondary rounded">Email</p>
                         <p className="text-gray-500 text-lg">mazharul90007@gmail.com</p>
                     </div>
                     {/* Address */}
-                    <div className="flex justify-between items-center border-b pb-1">
+                    <div className="flex justify-between items-center border-b border-gray-400 pb-1">
                         <p className="py-1 px-3 bg-primary text-secondary rounded">Address</p>
                         <p className="text-gray-500 text-lg">Dhaka, Bangladesh</p>
                     </div>
                     {/* Phone */}
-                    <div className="flex justify-between items-center border-b pb-1">
+                    <div className="flex justify-between items-center border-b border-gray-400 pb-1">
                         <p className="py-1 px-3 bg-primary text-secondary rounded">Phone</p>
                         <p className="text-gray-500 text-lg">+880 1939562168</p>
                     </div>
