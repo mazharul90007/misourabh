@@ -1,8 +1,8 @@
 import Title from '../../../Shared/Title/Title';
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import nestTree from "../../../../assets/nestree.png";
-import recommendo from "../../../../assets/recommendo.png";
-import equiSports from "../../../../assets/equiSports.png";
+import nestTree from "../../../../assets/nestree.webp";
+import recommendo from "../../../../assets/recommendo.webp";
+import equiSports from "../../../../assets/equiSports.webp";
 
 const Projects = () => {
     const projects = [
