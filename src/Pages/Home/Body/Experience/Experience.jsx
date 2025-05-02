@@ -8,7 +8,7 @@ const Experience = () => {
                 <Title firstLetter={'E'} title={'xperience'}></Title>
             </div>
             <section className="">
-                <div className=" p-6 border  rounded-lg shadow-md">
+                <div className=" p-6 border border-gray-300 rounded-lg shadow-md">
                     <div className="flex items-center space-x-4 mb-4">
                         <FaBuilding className="text-primary text-3xl" />
                         <div>

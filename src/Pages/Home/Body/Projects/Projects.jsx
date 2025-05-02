@@ -69,7 +69,7 @@ const Projects = () => {
                                 <div className={`w-full lg:w-5/12 p-6 flex flex-col ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
                                     <h3 className="text-2xl font-bold text-gray-900">{project.name}</h3>
                                     <p className="text-primary font-medium mt-2">{project.type}</p>
-                                    <p className="text-gray-600 my-4">{project.description}</p>
+                                    <p className="text-gray-500 my-4">{project.description}</p>
 
                                     <div className="flex flex-wrap gap-2 mb-4">
                                         {project.tags.map((tag, i) => (
