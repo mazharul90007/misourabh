@@ -15,7 +15,7 @@ const Projects = () => {
             liveLink: "https://nesttree-d03bc.web.app/",
             githubClient: "https://github.com/mazharul90007/nesttree-client",
             githubServer: "https://github.com/mazharul90007/nesttree-server",
-            tags: ["React", "Firebase", "Node.js", "MongoDB"]
+            tags: ["React", "Firebase", "Node.js", "Express.js", "MongoDB", "Stripe"]
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ const Projects = () => {
             liveLink: "https://recommendo-b1c90.web.app/",
             githubClient: "https://github.com/mazharul90007/recommendo",
             githubServer: "https://github.com/mazharul90007/recommendo-server",
-            tags: ["React", "Firebase", "Express.js"]
+            tags: ["React", "Firebase", "Node.js", "Express.js", "MongoDB"]
         },
         {
             id: 3,
@@ -37,7 +37,7 @@ const Projects = () => {
             liveLink: "https://equisports-d7611.web.app/",
             githubClient: "https://github.com/mazharul90007/equiSports",
             githubServer: "https://github.com/mazharul90007/equiSports-Server",
-            tags: ["React", "Node.js", "MongoDB", "Stripe"]
+            tags: ["React", "Node.js", "MongoDB"]
         }
     ];
 
@@ -54,9 +54,9 @@ const Projects = () => {
                             key={project.id}
                             className="bg-gray-100 shadow-md rounded-lg overflow-hidden"
                         >
-                            <div className="flex flex-col lg:flex-row h-[650px] lg:h-[450px]">
+                            <div className="flex flex-col lg:flex-row ">
                                 {/* Scrollable Image */}
-                                <div className={`w-full lg:w-7/12 overflow-y-auto hide-scrollbar ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+                                <div className={`w-full lg:w-7/12 overflow-y-auto hide-scrollbar h-[380px] lg:h-[450px] ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
                                     <img
                                         src={project.image}
                                         alt={project.name}
