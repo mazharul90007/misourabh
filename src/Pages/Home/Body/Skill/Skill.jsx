@@ -115,7 +115,7 @@ const Skill = () => {
                             >
                                 {skill.icon}
                             </motion.div>
-                            <h3 className="font-bold text-gray-700 text-base group-hover:text-transparent group-hover:bg-clip-text group-hover:text-green-600">
+                            <h3 className="font-bold text-gray-700 text-base group-hover:bg-clip-text group-hover:text-green-600">
                                 {skill.name}
                             </h3>
                         </motion.div>
