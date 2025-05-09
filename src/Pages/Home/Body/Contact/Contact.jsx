@@ -59,20 +59,20 @@ const Contact = () => {
 
                     {/* Contact Info */}
                     <div className="mt-4 text-center">
-                        <h2 className="text-xl font-semibold text-gray-800">Mazharul Islam Sourabh</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800">Mazharul Islam Sourabh</h2>
                         <p className="text-gray-600">Junior Web Developer</p>
 
                         {/* Details */}
-                        <div className="mt-4 space-y-3">
-                            <div className="flex items-center text-gray-700">
+                        <div className="mt-6 space-y-3">
+                            <div className="flex items-center text-gray-700 md:text-lg">
                                 <FaPhoneAlt className="mr-2 text-blue-500" />
                                 <span>+880-1939562168</span>
                             </div>
-                            <div className="flex items-center text-gray-700">
+                            <div className="flex items-center text-gray-700 md:text-lg">
                                 <FaEnvelope className="mr-2 text-blue-500" />
                                 <span>mazharul90007@gmail.com</span>
                             </div>
-                            <div className="flex items-center text-gray-700">
+                            <div className="flex items-center text-gray-700 md:text-lg">
                                 <FaMapMarkerAlt className="mr-2 text-blue-500" />
                                 <span>Dhaka, Bangladesh</span>
                             </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                     </div>
 
                     {/* Message */}
-                    <p className="mt-6 text-center text-gray-600 text-sm">
+                    <p className="mt-6 text-center text-gray-600">
                         If you have any queries at all, please feel free to reach out, and I will
                         gladly answer them. Thanks for visiting.
 

@@ -35,7 +35,7 @@ const Banner = () => {
                                 }}
                             />
                         </div>
-                        <p className="font-semibold text-gray-500 text-center w-11/12 md:w-9/12 mx auto">
+                        <p className="font-semibold md:text-lg text-gray-500 text-center w-11/12 md:w-9/12 mx auto">
                             A passionate Junior Developer who loves creating user-friendly interfaces and building responsive web applications for fast-growing startups.
                         </p>
 

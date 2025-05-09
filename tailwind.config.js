@@ -16,7 +16,8 @@ export default {
       colors: {
         background: '#E4EFE7',   // background color
         primary: '#11B98E', //icon color
-        secondary: '#D0E0D9' // section bg color
+        secondary: '#D0E0D9', // section bg color
+        darkGray: "",
       },
     },
   },

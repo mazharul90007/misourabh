@@ -84,7 +84,7 @@ const Education = () => {
             {educationData.map((edu) => (
               <VerticalTimelineElement
                 key={edu.id}
-                className="vertical-timeline-element--education"
+                className="vertical-timeline-element--education md:text-lg"
                 contentStyle={{
                   textAlign: "left",
                   background: "#f3f4f6",
@@ -136,7 +136,7 @@ const Education = () => {
             {certificationData.map((certificate) => (
               <VerticalTimelineElement
                 key={certificate.id}
-                className="vertical-timeline-element--education"
+                className="vertical-timeline-element--education md:text-lg"
                 contentStyle={{
                   textAlign: "left",
                   background: "#f3f4f6",
