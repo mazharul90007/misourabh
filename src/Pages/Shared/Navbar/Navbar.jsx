@@ -10,12 +10,6 @@ const Navbar = () => {
         >
             <li>Home</li>
         </NavLink>
-        {/* <NavLink 
-            to={'/resume'}
-            className={({ isActive }) => isActive ? "text-amber-700 font-bold" : "text-black"}
-        >
-            <li>Resume</li>
-        </NavLink> */}
         <NavLink 
             to={'/contact'}
             className={({ isActive }) => isActive ? "text-amber-700 font-bold" : "text-black"}
@@ -40,7 +34,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to={'/'}>
-                    <h2 className="text-6xl font-fuggles cursor-pointer">miSourabh</h2>
+                    <h2 className="text-6xl font-fuggles cursor-pointer text-primary">miSourabh</h2>
                 </Link>
             </div>
             <div className="navbar-center">
